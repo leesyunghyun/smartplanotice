@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl_activity_main_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/li01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/liparentmain01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="12"
+                android:orientation="horizontal" >
+
+                <HorizontalScrollView
+                    android:id="@+id/svparentmain01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true" >
+
+                    <LinearLayout
+                        android:id="@+id/lisvparentmain01"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/side"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lispnMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnparentmain01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btnmapright"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnparentmain02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btnmapleft"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnparentmain03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btnmaptop"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnparentmain04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/btnmapbottom"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnparentmaindown01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/li01"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_mylocation" />
+
+        <Button
+            android:id="@+id/btnparentmain05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btnparentmain01"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/clickpalletred"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnparentmain06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btnparentmain05"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/palletblue"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnparentmain07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btnparentmain06"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/palletyello"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnparentmain08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btnparentmain07"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/palletgreen"
+            android:visibility="gone" />
+        
+         <Button
+            android:id="@+id/btnparentmain11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/li01"
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/btn_fragment_menu"/>
+         
+        <Button
+            android:id="@+id/btnparentmain10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btnparentmaindown01"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/btnactioncancel"
+            android:visibility="gone" />
+     
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_activity_main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ListView
+        android:id="@+id/lv_activity_main_nav_list"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#EDEDED"
+        android:choiceMode="singleChoice"
+        android:dividerHeight="1dp" />
+
+</android.support.v4.widget.DrawerLayout>

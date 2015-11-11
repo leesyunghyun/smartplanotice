@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="smart.planotice.smartplanotice"
+    android:versionCode="3"
+    android:versionName="0.021" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/main"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="smart.planotice.smartplanotice.SPN_MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="smart.planotice.smartplanotice.SPN_LoadingSplash" >
+        </activity>
+        <activity android:name="smart.planotice.smartplanotice.SPN_ParentMain" >
+        </activity>
+        <activity android:name="smart.planotice.smartplanotice.SPN_ChildMain" >
+        </activity>
+        <activity android:name="smart.planotice.smartplanotice.SPN_ChildSetting" >
+        </activity>
+        <activity android:name="smart.planotice.smartplanotice.SPN_ChildAdd" >
+        </activity>
+        <activity android:name="smart.planotice.smartplanotice.SPN_HELP" >
+        </activity>
+        <activity android:name="smart.planotice.smartplanotice.SPN_ChkAccredit">
+        </activity>
+        <service
+            android:name="smart.planotice.smartplanotice.SPN_Connect_BackServ"
+            android:enabled="true" >
+        </service>
+    </application>
+
+</manifest>

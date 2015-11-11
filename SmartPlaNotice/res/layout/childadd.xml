@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/childaddwindow" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnchildadd01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnchildphonebook" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvchildadd01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="휴대폰 번호 : "
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etchildadd01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnchildadd02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/btnchildaddrequest" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주의사항 : 연락처의 형태는  ` 01012345678 ` 와 같은 형태가 되어야함.\n ex) 010-1234-5678 의 경우  ` 01012345678 `"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvchildadd02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인증번호 : "
+                android:textSize="20dp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/etchildadd02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="8"
+                android:inputType="number"
+                android:textSize="20dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btnchildadd03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnchildaccept"
+                android:visibility="invisible" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+             <TextView
+                android:id="@+id/tvchildadd03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:visibility="invisible"
+                android:text="제한시간 : " />
+            
+            <TextView
+                android:id="@+id/tvchildadd04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff0000"
+                android:textSize="20dp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
